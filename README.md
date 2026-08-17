@@ -45,14 +45,20 @@ no `pip install` needed).
 
 ## Run
 
-```bash
-cd airline_system
-python3 seed_data.py   # (optional — main_gui.py auto-seeds if airline.db is missing)
-python3 main_gui.py
-```
+# Airline Management System
 
-To regenerate fresh random data at any time, just delete `airline.db` and
-re-run `python3 seed_data.py` (or `main_gui.py`, which will auto-seed).
+A Python + Tkinter based Airline Booking System
+
+## How to Run
+1. Install Python 3.x
+2. `python seed_data.py`  - to add sample flights and airports
+3. `python main_gui.py`    - to start the GUI
+
+## Files
+- `main_gui.py` - Main application window
+- `database.py` - Database logic
+- `map_widget.py` - Map display
+- `seed_data.py` - Sample data
 
 ## Notes
 - The map is drawn purely with Tkinter Canvas (no internet / image files
